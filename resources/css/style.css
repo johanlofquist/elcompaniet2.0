@@ -1,56 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #0f182a;
-    font-family: 'Inter', sans-serif;
-    color: #e2e8f0;
-    scroll-behavior: smooth;
+  background-color: #0f182a;
+  font-family: "Inter", sans-serif;
+  color: #e2e8f0;
+  scroll-behavior: smooth;
 }
 
 .glow-cursor {
-    width: 1000px;
-    height: 1000px;
-    border-radius: 50%;
-    position: absolute;
-    background: radial-gradient(500px, rgba(29, 78, 216, 0.15), transparent 80%);
-    pointer-events: none;
-    z-index: 9999;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(500px, rgba(29, 78, 216, 0.15), transparent 80%);
+  pointer-events: none;
+  z-index: 9999;
 }
 
 #main__container {
-    width: 80vw;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
 }
 
 #header {
-    width: 50%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 60px;
+  width: 50%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
 }
 
 #first__section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #first__section img {
-    width: 200px;
+  width: 200px;
+  margin: 0;
 }
 
+#first__section h4 {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+#first__section p{
+    color: #94a3b8;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 50px
+}
+
+.button__container {
+    display: flex;
+    color: #64748b;
+    transition: all 300ms ease;
+}
+
+.button__container:hover {
+    display: flex;
+    color: white;
+    margin-left: 50px;
+}
+
+.line {
+    width: 30px;
+    height: 20px;
+    border-bottom: 1px solid;
+    border-color: inherit;
+    margin-right: 10px;
+}
+
+
+#buttons button {
+  all: unset;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#links {
+    color: #94a3b8;
+}
+
+
 #main {
-    width: 50%;
-    flex-direction: column;
+  width: 50%;
+  flex-direction: column;
 }
