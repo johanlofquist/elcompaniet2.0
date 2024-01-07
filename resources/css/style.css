@@ -80,6 +80,9 @@ body {
   margin-top: 50px;
   align-items: flex-start;
 }
+#buttons a {
+  text-decoration: none;
+}
 
 .button__container {
   display: flex;
@@ -88,7 +91,11 @@ body {
 }
 
 .button__container:hover {
-  display: flex;
+  color: white;
+  margin-left: 30px;
+}
+
+.active {
   color: white;
   margin-left: 30px;
 }
@@ -253,5 +260,28 @@ body {
 
 .hrhello {
     margin-top: 70px;
+    margin-bottom: 70px;
     border-color: #64748b;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: #e2e8f0;
+}
+
+.contact__container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 50px;
+    color: #e2e8f0;
 }

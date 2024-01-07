@@ -19,4 +19,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+let hemBtn = document.getElementById("hem__btn")
+let tjansterBtn = document.getElementById("tjanster__btn")
+let omBtn = document.getElementById("om__btn")
+let kontaktBtn = document.getElementById("kontakt__btn")
 
+window.addEventListener("scroll", function(e) {
+    console.log(this.window.scrollY)
+    if (this.window.scrollY < 400) {
+        hemBtn.classList.add("active")
+        tjansterBtn.classList.remove("active")
+        omBtn.classList.remove("active")
+        kontaktBtn.classList.remove("active")
+    } else if (this.window.scrollY < 2000) {
+        hemBtn.classList.remove("active")
+        tjansterBtn.classList.add("active")
+        omBtn.classList.remove("active")
+        kontaktBtn.classList.remove("active")
+    } else if (this.window.scrollY < 2400) {
+        hemBtn.classList.remove("active")
+        tjansterBtn.classList.remove("active")
+        omBtn.classList.add("active")
+        kontaktBtn.classList.remove("active")
+    } else {
+        hemBtn.classList.remove("active")
+        tjansterBtn.classList.remove("active")
+        omBtn.classList.remove("active")
+        kontaktBtn.classList.add("active")
+    }
+})
