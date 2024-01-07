@@ -90,7 +90,7 @@ body {
 .button__container:hover {
   display: flex;
   color: white;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .line {
@@ -111,15 +111,32 @@ body {
   letter-spacing: 3px;
 }
 
-#links h3 {
-  color: #94a3b8;
-  font-weight: 300;
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #64748b;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 300ms ease;
 }
 
-#links a {
-  color: #e94f1c;
-  font-weight: 300;
-  text-decoration: none;
+#links:hover {
+    background-color: rgba(233, 79, 28, 0.9);
+}
+
+#enlogo {
+    height: 40px;
+}
+
+#brand__cert__one {
+    height: 50px;
+}
+
+#brand__cert__two {
+    height: 50px;
 }
 
 #main {
@@ -151,6 +168,12 @@ body {
     max-width: 580px;
     align-items: flex-start;
     gap: 20px;
+    opacity: 0.7;
+    transition: all 200ms ease-in;
+}
+.tjanster__container:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
 
 .tjanster__container img {
@@ -188,7 +211,7 @@ body {
 }
 
 .tags {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
