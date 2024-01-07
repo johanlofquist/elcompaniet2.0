@@ -12,6 +12,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .glow-cursor {
@@ -31,11 +32,13 @@ body {
   display: flex;
 }
 
+
 #header {
   width: 50%;
   height: 100vh;
   position: sticky;
   top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,6 +78,7 @@ body {
   flex-direction: column;
   margin: 0;
   margin-top: 50px;
+  align-items: flex-start;
 }
 
 .button__container {
@@ -133,4 +137,67 @@ body {
 
 .white {
     color: #e2e8f0;
+}
+
+#tjanster {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 70px;
+}
+
+.tjanster__container {
+    display: flex;
+    max-width: 580px;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.tjanster__container img {
+    max-width: 150px;
+    opacity: 1;
+}
+
+.text__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text__container h4 {
+    font-size: 24px;
+    color: #e2e8f0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.text__container h6 {
+    font-size: 18px;
+    color: #64748b;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.text__container p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    color: #e94f1c;
+    background-color: rgba(233, 79, 28, 0.3);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
 }
