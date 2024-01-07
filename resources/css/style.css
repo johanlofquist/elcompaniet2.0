@@ -125,10 +125,12 @@ body {
 
 #links:hover {
     background-color: rgba(233, 79, 28, 0.9);
+    transform: scale(1.1);
 }
 
 #enlogo {
     height: 40px;
+
 }
 
 #brand__cert__one {
@@ -223,4 +225,33 @@ body {
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 12px;
+}
+
+#about {
+    margin-top: 80px;
+}
+
+#about h2 {
+    color: #e2e8f0;
+}
+
+#about p {
+    line-height: 26px;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+#about a {
+    text-decoration: none;
+    color: #e2e8f0;
+
+}
+
+.bold {
+    color: #e2e8f0;
+}
+
+.hrhello {
+    margin-top: 70px;
+    border-color: #64748b;
 }
