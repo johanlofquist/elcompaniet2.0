@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,26 +13,6 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-}
-
-#mobile__landing {
-  display: none;
-}
-
-.menu {
-  display: none;
-}
-
-#hamburger__menu {
-  display: none;
-}
-
-#logo__in__mobile {
-  display: none;
-}
-
-#tjanster__mobile {
-  display: none;
 }
 
 .glow-cursor {
@@ -870,4 +851,26 @@ body {
 .hide__menu {
   display: block;
   animation: slideOut 1s forwards;
+}
+
+@media screen and (min-width: 901px) {
+  #mobile__landing {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  #hamburger__menu {
+    display: none;
+  }
+
+  #logo__in__mobile {
+    display: none;
+  }
+
+  #tjanster__mobile {
+    display: none;
+  }
 }
