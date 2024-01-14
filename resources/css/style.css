@@ -14,6 +14,10 @@ body {
   padding: 0;
 }
 
+#mobile__landing {
+  display: none;
+}
+
 .menu {
   display: none;
 }
@@ -316,13 +320,41 @@ body {
     width: 100vw;
   }
 
-  #logo__in__mobile {
-    height: 50px;
-    display: block;
-    position: fixed;
-    top: 15px;
-    left: 15px;
+  #mobile__landing {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
   }
+
+  #mobile__landing img{
+    width: 60%;
+  }
+
+  #mobile__landing h4 {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+  }
+  #mobile__landing p {
+    color: #94a3b8;
+    margin: 0;
+    margin-top: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 400px;
+  }
+
+
 
   .glow-cursor {
     width: 1000px;
@@ -415,6 +447,7 @@ body {
     font-weight: 500;
     margin: 0;
     margin-top: 20px;
+    display: none;
   }
   #first__section p {
     color: #94a3b8;
@@ -424,6 +457,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     max-width: 400px;
+    display: none;
   }
 
   #buttons {
