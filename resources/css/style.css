@@ -350,6 +350,28 @@ body {
     display: none;
   }
 
+  #mobile__glow__wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  #mobile__glow {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(500px, rgba(29, 78, 216, 0.15), transparent 80%);
+    pointer-events: none;
+    z-index: 9999;
+    top: -175px;
+    left: -270px;
+  }
+  
   #main__container {
     width: 100vw;
     max-width: 1280px;
