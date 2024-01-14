@@ -188,7 +188,7 @@ body {
   color: #e2e8f0;
 }
 
-#tjanster {
+#tjanster__desktop {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -554,13 +554,24 @@ body {
     line-height: 26px;
     color: #94a3b8;
     font-weight: 400;
+    margin-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
   }
 
   .white {
     color: #e2e8f0;
   }
 
-  #tjanster {
+  #tjanster__desktop {
+    display: none;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 70px;
+  }
+
+  #tjanster__mobile {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
@@ -631,6 +642,9 @@ body {
 
   #about {
     margin-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
   }
 
   #about h2 {
