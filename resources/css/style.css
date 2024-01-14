@@ -662,6 +662,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 120px;
+    align-items: center;
   }
 
   #contact a {
@@ -672,7 +674,6 @@ body {
   .contact__container {
     display: flex;
     gap: 30px;
-    align-items: center;
   }
 
   .icon {
